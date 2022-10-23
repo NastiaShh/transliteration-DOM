@@ -14,20 +14,27 @@
   <main>
     <section class="input">
       <form class="input__container">
-        <input type="text" placeholder="Начните вводить текст" required autofocus>
-        <button type="submit">Добавить</button>
+        <input class="input__text" type="text" placeholder="Начните вводить текст" required autofocus>
+        <button class="input__button" type="submit">Добавить</button>
       </form>
     </section>
     <section class="dictionary">
       <div class="dictionary__container">
-        <div class="dictionary__str">
-          <div class="dictionary__num">1</div>
-          <div class="dictionary__сyrillic">Привет 👋🏻</div>
-          <div class="dictionary__latin">Privet</div>
-          <img class="dictionary__remove-icon" src="./images/remove-icon.svg" alt="Удалить слово">
+        <div class="dictionary__row">
+          <div class="dictionary__column dictionary__column_side_left">
+            <span class="dictionary__num">1</span>
+            <span class="dictionary__сyrillic">Привет 👋🏻</span>
+          </div>
+          <div class="dictionary__column dictionary__column_side_right">
+            <span class="dictionary__latin">Privet</span>
+            <img class="dictionary__remove-icon dictionary__remove-icon_for_word" src="./images/remove-icon.svg" alt="Удалить слово">
+          </div>
         </div>
       </div>
-      <button type="reset">Очистить всё</button>
+      <button class="dictionary__remove-button" type="reset">
+        <img class="dictionary__remove-icon dictionary__remove-icon_for_all" src="./images/remove-icon.svg" alt="Удалить слово">
+        Очистить всё
+      </button>
     </section>
   </main>
   <script defer src="./index.js"></script>
